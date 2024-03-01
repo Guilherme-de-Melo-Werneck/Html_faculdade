@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+.topo {
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.conteudo-externo {
+    display: flex;
+    flex-grow: 1; 
+}
+
+.lateral-esquerda {
+    background-color: blue;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lateral-direita {
+    background-color: blue;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    background-color: turquoise;
+    flex-grow: 1; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rodape {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
