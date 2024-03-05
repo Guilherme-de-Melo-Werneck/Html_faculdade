@@ -1,0 +1,11 @@
+.QUADRADO {
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	}
+
+.ABSOLUTO {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	}
