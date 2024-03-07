@@ -82,12 +82,13 @@ color: #003366;
 
    .menu-departamentos {
     margin-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .menu-departamentos ul {
 	list-style-type:none;
 	padding: 0;
+	margin-bottom: 0;
 }
 	   
 	 
