@@ -55,7 +55,24 @@ header {
 	right: 0;
 	 }
 
+.busca,
+.menu-departamentos {
+	float: left;
+	 }
+.menu-departamentos {
+	clear: left;
+	 }
 
+.menu-departamentos {
+	text-transform: uppercase;
+	 }
+
+.item-menu {
+	text-decoration: none;
+	 }
+
+	   
+	   
 	   
 	   
 	   
