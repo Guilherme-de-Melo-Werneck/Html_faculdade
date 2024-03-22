@@ -16,7 +16,7 @@ ul {
 
 header {
     height: calc(100vh - 150px); /* Altura do cabeçalho com base na altura da viewport */
-    background: no-repeat center/cover url(img/computador.jpg); 
+    background: no-repeat center/cover url(../img/computador.jpg); 
 }
 
 header nav {
@@ -217,7 +217,7 @@ h1 {
     right: 20px; /* Distância do canto direito */
     width: 100px; /* Largura da imagem */
     height: 100px; /* Altura da imagem */
-    background-image: url('img/icone-pagina.webp'); 
+    background-image: url('../img/icone-pagina.webp'); 
     background-size: cover; /* Ajusta a imagem para cobrir o espaço disponível */
     background-position: center; /* Centraliza a imagem */
     cursor: pointer; /* Altera o cursor ao passar por cima */
