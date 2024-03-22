@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Fonte do texto */
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+ul {
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+header {
+    height: calc(100vh - 150px); /* Altura do cabeçalho com base na altura da viewport */
+    background: no-repeat center/cover url(img/computador.jpg); 
+}
+
+header nav {
+    display: flex; /* Exibe os itens do menu em linha */
+    justify-content: space-between; /* Distribui os itens do menu igualmente */
+    margin: auto 30px; /* Margem automática no topo e na base e 30px nas laterais */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    color: #fff; /* Cor dos links */
+    font-weight: bold; /* Texto em negrito */
+}
+
+nav ul li a:hover {
+    color: #FF8427; /* Cor do link ao passar o mouse */
+    transition: .3s ease all; /* Transição suave */
+}
+
+header nav ul {
+    display: flex; /* Exibe a lista em linha */
+    margin: 12px 12px; /* Margem de 12px em cima e embaixo e 12px nas laterais */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Margem de 0 em cima e embaixo e 15px nas laterais para cada item da lista */
+}
+
+button {
+    margin-top: 15px; /* Margem superior de 15px */
+    padding: 10px 15px; /* Preenchimento interno de 10px no topo e na base e 15px nas laterais */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Sem borda */
+    background-color: #FF8427; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-family: 'Montserrat', sans-serif; /* Fonte do botão */
+}
+
+button:hover {
+    background-color: #d3d3d3; /* Cor de fundo do botão ao passar o mouse */
+    opacity: 0.75; /* Opacidade do botão ao passar o mouse */
+    color: black; /* Cor do texto do botão ao passar o mouse */
+    transition: .3s ease all; /* Transição suave */
+}
+
+h1 {
+    font-size: 2rem; /* Tamanho da fonte dos cabeçalhos de nível 1 */
+}
+
+.header-content {
+    max-width: 400px; /* Largura máxima do conteúdo do cabeçalho */
+    margin: 150px auto; /* Margem superior e inferior de 150px e margem automática nas laterais */
+    color: aliceblue; /* Cor do texto */
+    text-align: center; /* Alinhamento centralizado */
+}
+
+.header-content h1 {
+    margin-bottom: 10px; /* Margem inferior 1 */
+}
+
+.produtos {
+    background-color: #333; /* Cor de fundo mais escura para os produtos */
+    padding: 15px; /* Preenchimento interno */
+}
+
+.produtos-title {
+    width: 100%; /* Largura  */
+    text-align: center; /* Alinhamento centralizado */
+    padding: 15px; /* Preenchimento interno  */
+}
+
+.produtos .produtos-lis {
+    display: flex; /* Exibe os lis dos produtos em linha */
+    margin: auto; /* Margem automática */
+    flex-wrap: wrap; /* Conforme a tela diminui, os lis vão para a linha de baixo */
+}
+
+.produtos .li {
+    width: 250px; /* Largura do li */
+    height: 350px; /* Altura do li */
+    margin: 20px; /* Margem externa  */
+    background-color: #1c1c1c; /* Cor de fundo mais escura para os lis */
+    border-radius: 24px 0 24px 0; /* Bordas arredondadas */
+    position: relative; /* Posição relativa para os elementos filhos */
+}
+
+.produtos .li-image {
+    width: 250px; /* Largura da imagem do li */
+    height: 200px; /* Altura da imagem do li */
+    border-radius: 24px 0 0 0; /* Bordas arredondadas */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível */
+}
+
+.produtos .li-content h1 {
+    font-size: 1.2rem; /* Tamanho da fonte do título */
+    text-align: center; /* Alinhamento centralizado */
+    margin: 5px 0; /* Margem de  cima e embaixo */
+    color: #fff; /* Cor do texto */
+}
+
+.produtos .li-content ul {
+    display: flex; /* Exibe os itens da lista em linha */
+    flex-direction: column; /* Direção da lista como coluna */
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.produtos .li-content li {
+    font-size: .8rem; /* Tamanho da fonte dos itens da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin: 0 10px; /* Margem em cima e embaixo */
+    color: grey; /* Cor do texto */
+}
+
+.produtos .li-content li svg {
+    width: 18px; /* Largura do ícone */
+    height: 18px; /* Altura do ícone */
+    margin: 8px; /* Margem externa  */
+}
+
+.produtos .li .li-tag-top {
+    position: absolute; /* Posição absoluta para o elemento */
+    right: 0; /* Alinhamento à direita */
+    top: 15px; /* Distância do topo */
+    background-color: #FF8427; /* Cor de fundo */
+    border-radius: 8px 0 0 8px; /* Bordas arredondadas */
+    padding: 9px 10px; /* Preenchimento interno */
+    color: #fff; /* Cor do texto */
+}
+
+.produtos .li .li-tag-bottom {
+    position: absolute; /* Posição absoluta para o elemento */
+    left: 0; /* Alinhamento à esquerda */
+    top: 150px; /* Distância do topo */
+    background: #FF8427; /* Cor de fundo */
+    border-radius: 0 8px 8px 0; /* Bordas arredondadas */
+    padding: 5px 10px; /* Preenchimento interno */
+}
+
+.produtos .li .li-tag p {
+    font-size: 1rem; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.servicos {
+    padding: 15px; /* Preenchimento interno  */
+    background-color: #000000; /* Cor de fundo mais escura para os serviços */
+}
+
+.servicos .servicos-title {
+    text-align: center; /* Alinhamento centralizado */
+    font-size: 2rem; /* Tamanho da fonte */
+    margin: 25px; /* Margem externa  */
+    color: #fff; /* Cor do texto */
+}
+
+.servicos .servicos-lis {
+    display: flex; /* Exibe os lis de serviços em linha */
+    justify-content: center; /* Centraliza os lis horizontalmente */
+    margin: auto; /* Margem automática */
+    max-width: 950px; /* Largura máxima */
+    padding: 15px 0; /* Preenchimento interno em cima e embaixo */
+    flex-wrap: wrap; /* Conforme a tela diminui, os lis vão para a linha de baixo */
+}
+
+.servicos .li {
+    width: 250px; /* Largura do li */
+    display: flex; /* Exibe os itens do li em linha */
+    flex-direction: column; /* Direção dos itens do li como coluna */
+    align-items: center; /* Alinha os itens centralmente */
+    margin: 15px  25px; /* Margem externa em cima e embaixo */
+}
+
+.servicos .li svg {
+    width: 60px; /* Largura do ícone */
+    height: 60px; /* Altura do ícone */
+    margin-bottom: 20px; /* Margem inferior  */
+    color: #FF8427; /* Cor do ícone */
+}
+
+.servicos .li h3 {
+    font-weight: bold; /* Texto em negrito */
+    color: #FF8427; /* Cor do texto */
+}
+
+.servicos .li p {
+    color: #fff; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento centralizado */
+    margin-top: 25px; /* Margem superior  */
+}
+
+.icon-pagina {
+    position: fixed;
+    bottom: 20px; /* Distância do canto inferior */
+    right: 20px; /* Distância do canto direito */
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    background-image: url('img/icone-pagina.webp'); 
+    background-size: cover; /* Ajusta a imagem para cobrir o espaço disponível */
+    background-position: center; /* Centraliza a imagem */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+}
+footer {
+    background-image: url(../img/fundo-rodape.png);
+  }
+.social a {
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px; /* image replacement */
+    display: block;
+    text-indent: -9999px;
+  }
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+  }
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+  }
+.social a[href*="edu.br"] {
+    background-image: url(../img/googleplus.png);
+  }
+  
+footer {
+    padding: 35px 0;
+    clear: both;
+  }
+
+.social li {
+    float: left;
+    margin-left: 25px;
+  }
+
+ 
+.imagem-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Remove o fundo da div */
+  }
+  
+.imagem-container img {
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+.content {
+    margin-top: 50px;
+}
