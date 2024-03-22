@@ -72,6 +72,8 @@ h1 {
     margin: 150px auto; /* Margem superior e inferior de 150px e margem automática nas laterais */
     color: aliceblue; /* Cor do texto */
     text-align: center; /* Alinhamento centralizado */
+    
+   
 }
 
 .header-content h1 {
@@ -211,17 +213,7 @@ h1 {
     margin-top: 25px; /* Margem superior  */
 }
 
-.icon-pagina {
-    position: fixed;
-    bottom: 20px; /* Distância do canto inferior */
-    right: 20px; /* Distância do canto direito */
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
-    background-image: url('../img/icone-pagina.webp'); 
-    background-size: cover; /* Ajusta a imagem para cobrir o espaço disponível */
-    background-position: center; /* Centraliza a imagem */
-    cursor: pointer; /* Altera o cursor ao passar por cima */
-}
+
 footer {
     background-image: url(../img/fundo-rodape.png);
   }
