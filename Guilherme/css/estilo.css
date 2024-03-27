@@ -137,12 +137,14 @@ header {
   float: left;
   height: 404px;
   border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 .mais-vendidos {
   float: right;
   border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .painel li {
@@ -168,13 +170,13 @@ header {
 }
 
 .novidades {
-  background-color: #444343;
+  background-color: #666464;
   color: rgb(0, 234, 255);
   
 }
 
 .mais-vendidos {
-  background-color: #444343;
+  background-color: #666464;
   color: rgb(0, 234, 255);
 }
 
@@ -187,7 +189,7 @@ header {
   padding: 10px;
   background-color: #ffffff; /* cor de fundo preto */
   margin-top: 50px;
-  color: #444343; 
+  color: #666464; 
   
 }
 
@@ -206,7 +208,7 @@ header {
   max-width: 950px; 
   padding: 15px 0;
   flex-wrap: wrap; 
-  background-color: #444343;
+  background-color: #666464;
   border-radius: 20px;
 }
 
