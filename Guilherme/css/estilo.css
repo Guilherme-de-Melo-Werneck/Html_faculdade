@@ -168,13 +168,13 @@ header {
 }
 
 .novidades {
-  background-color: #000000;
+  background-color: #444343;
   color: rgb(0, 234, 255);
   
 }
 
 .mais-vendidos {
-  background-color: #000000;
+  background-color: #444343;
   color: rgb(0, 234, 255);
 }
 
@@ -187,7 +187,7 @@ header {
   padding: 10px;
   background-color: #ffffff; /* cor de fundo preto */
   margin-top: 50px;
-  color: #000000; 
+  color: #444343; 
   
 }
 
@@ -206,7 +206,7 @@ header {
   max-width: 950px; 
   padding: 15px 0;
   flex-wrap: wrap; 
-  background-color: #000000;
+  background-color: #444343;
   border-radius: 20px;
 }
 
