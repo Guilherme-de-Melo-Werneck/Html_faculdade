@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> aula 9</h1>
+    <script>
+        var MEUAPP = MEUAPP || {};
+        // var novo = {"type":"object",
+        //             "$schema": "http://json-schema.org/draft-03/schema",
+        //             "id": "#",
+        //             "required":false,
+        //             "properties":{
+        //                 "OrgId": {
+        //                     "type":"string",
+        //                     "id": "OrgId",
+        //                     "required":false
+        //                 },
+        //                 "metrics": {
+        //                     "type":"array",
+        //                     "id": "metrics",
+        //                     "required":false,
+        //                     "items": {
+        //                         "type":"object",
+        //                         "id": "0",
+        //                         "required":false,
+        //                         "properties":{
+        //                             "name": {
+        //                                 "type":"string",
+        //                                 "id": "name",
+        //                                 "required":false
+        //                             },
+        //                             "valueTrend": {
+        //                                 "type":"array",
+        //                                 "id": "valueTrend",
+        //                                 "required":false,
+        //                                 "items": {
+        //                                     "type":"object",
+        //                                     "id": "0",
+        //                                     "required":false,
+        //                                     "properties":{
+        //                                         "date": {
+        //                                             "type":"string",
+        //                                             "id": "date",
+        //                                             "required":false
+        //                                         },
+        //                                         "val": {
+        //                                             "type":"string",
+        //                                             "id": "val",
+        //                                             "required":false
+        //                                         }
+        //                                     }
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        MEUAPP.eventos = {
+            mostrarNome: function (nome){
+                console.log(nome);
+            },
+        };
+        
+        var Pessoa = function(e){
+            // console.log(e);
+            this.nome = e
+            this.dizNome = function(){
+                alert(this.nome);
+            };
+        };
+
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+        function local(endereco){
+            console.log('O usuário mora em ' + endereco.cidade + ' / ' + 'no bairro ' + endereco.bairro + ', ' + 'na rua "' + endereco.rua + '" com nº ' + endereco.numero)
+        }
+
+        function pares(x, y) {
+            for (let i = x; i <= y; i++) {
+                if (i % 2 === 0) {
+                    console.log(i);
+                };
+            };
+        };
+pares(32, 321);
+
+    </script>
+</body>
+</html>
